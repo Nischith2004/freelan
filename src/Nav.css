@@ -1,0 +1,85 @@
+.nav {
+  margin-top: 0;
+  padding: 0;
+  min-height: 80px;
+  width: 100vw;
+  z-index: 30;
+  color: yellow;
+  background-color: rgb(21, 19, 19);
+  border: 0.25px solid rgb(190, 190, 190);
+  position: fixed;
+}
+.logo {
+  /*margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 600px;*/
+
+  color: rgb(247, 61, 61);
+}
+#uolist {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+#uolist li {
+  /*margin-top: 15px;
+  margin-left: 100px;*/
+  font-size: 20px;
+  list-style-type: none;
+}
+a {
+  color: rgb(164, 248, 8);
+  text-decoration: none;
+  font-weight: 600;
+}
+.menuicon {
+  color: rgb(164, 248, 8);
+  font-size: 16px;
+}
+@media (min-width: 1200px) {
+  .logo {
+    margin-right: 500px;
+  }
+}
+@media (min-width: 600px) and(max-width:1200px) {
+  .logo {
+    margin-right: 200px;
+  }
+}
+
+/*dropdown ka code*/
+/* Dropdown menu styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdownToggle {
+  background: #333;
+  color: rgb(161, 237, 54);
+
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #91ec29;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdownMenu li {
+  padding: 10px;
+}
+
+.dropdownMenu li a {
+  color: white;
+  text-decoration: none;
+}

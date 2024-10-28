@@ -1,0 +1,42 @@
+/*cursor {
+  z-index: 999;
+  position: fixed;
+  background-color: rgba(196, 101, 158, 0.5);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0px 0px 20px rgb(156, 201, 137), 0px 0px 60px rgb(156, 201, 137),
+    0px 0px 100px rgb(156, 201, 137);
+  animation: colors 5s infinite;
+  transform: translate(-50%, -50%);
+  transition-delay: 16ms;
+  display: none;
+  backdrop-filter: blur(150px);
+}
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.cursor:before {
+  content: "";
+  position: absolute;
+  background-image: repeating-conic-gradient(
+    #96e183 0deg 30deg,
+    #85dc76 30deg 60deg,
+    #d87ce8 60deg 90deg
+  );
+  filter: blur(30px);
+  background-blend-mode: screen;
+
+  backdrop-filter: blur(150px);
+  width: 100px;
+  height: 100px;
+
+  transform: translate(-40%, -40%);
+  border-radius: 50%;
+}*/
